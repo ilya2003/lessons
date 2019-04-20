@@ -1,0 +1,2 @@
+#Отключаем сообщения типа warning и notice
+php_value error_reporting 1
