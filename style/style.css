@@ -22,3 +22,17 @@ a:hover
     color: white;
     margin-left: 50px;
 }
+
+#pifagor td
+{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#pifagor .first
+{
+    background-color: yellow;
+    color: black;
+}

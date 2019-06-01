@@ -43,3 +43,41 @@ function today()
     echo "Сегодня ";
     echo $days[date("l")].", ".date("j")." ".$month[date('F')]." ".date('Y')." года";
 }
+
+function pifagor($strok,$slolb)
+{
+    echo "\n<table>";
+
+    for ($tr=1;$tr<=$strok;$tr++)
+    {
+        echo "\n\t<tr>";
+        if($tr==1)
+        {
+            for ($td=1;$td<=$slolb;$td++)
+            {
+                echo "<td class='first'>{$td}</td>";
+            }
+        }
+        else
+        {
+            for ($td=1;$td<=$slolb;$td++)
+            {
+                if ($td == 1)
+                {
+                    echo "<td class='first'>".$tr*$td."</td>";
+                }
+                else
+                {
+                    echo "<td>".$tr*$td."</td>";
+                }
+
+            }
+        }
+
+        echo "</tr>";
+    }
+
+
+    echo "\n</table>\n";
+
+}
