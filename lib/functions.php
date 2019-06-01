@@ -44,6 +44,7 @@ function today()
     echo $days[date("l")].", ".date("j")." ".$month[date('F')]." ".date('Y')." года";
 }
 
+// Таблица Пифагора
 function pifagor($strok,$slolb)
 {
     echo "\n<table>";
@@ -55,7 +56,15 @@ function pifagor($strok,$slolb)
         {
             for ($td=1;$td<=$slolb;$td++)
             {
-                echo "<td class='first'>{$td}</td>";
+                if ($td == 1)
+                {
+                    echo "<td class='first'></td>";
+                }
+                else
+                {
+                    echo "<td class='first'>{$td}</td>";
+                }
+
             }
         }
         else
