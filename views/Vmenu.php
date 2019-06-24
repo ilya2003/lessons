@@ -6,7 +6,10 @@ today();
 <a href="http://google.ru">Поискать в Google</a>
 <a href="oop.php">ООП</a>
 <?php
-$menu = db("SELECT menu_name,id FROM pages");
+require_once "app\classes\Config.php";
+require_once "app\classes\Db.php";
+$result = new app\classes\Db();
+$menu = $result->sql("SELECT menu_name,id FROM pages");
 
 foreach ($menu as $page)
 {
